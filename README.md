@@ -1,10 +1,6 @@
 # Simple HTTP Server
 ## Install
 ```bash
-export GOROOT=$HOME/go
-export PATH=$PATH:$GOROOT/bin
-```
-```bash
 $ go get -u github.com/dominoyh5/gttp
 ```
 ## Run
