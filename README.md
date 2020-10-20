@@ -7,3 +7,4 @@ $ go get github.com/dominoyh5/gttp
 ```bash
 $ gttp
 ```
+![example](https://github.com/dominoyh5/gttp/blob/main/ex.png?raw=true)
