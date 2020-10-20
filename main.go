@@ -2,6 +2,7 @@ package main
 
 import (
         "log"
+        "flag"
         "net/http"
        )
 
@@ -18,8 +19,13 @@ func logging(handler http.Handler) http.Handler {
 }
 
 func main() {
+    // port
+    port := flag.String("p", "8080", "port")
+    flag.Parse()
+
+    // server
     http.Handle("/", logging(http.FileServer(http.Dir("."))))
 
-    log.Println("Start: http://localhost:8080")
-    log.Fatal(http.ListenAndServe(":8080", nil))
+    log.Println("Start: http://localhost:" + *port)
+    log.Fatal(http.ListenAndServe(":" + *port, nil))
 }
