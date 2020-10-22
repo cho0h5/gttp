@@ -1,4 +1,4 @@
-# Simple HTTP Server
+# Simple Golang HTTP Server
 ## Install
 ```bash
 $ go get -u github.com/dominoyh5/gttp
