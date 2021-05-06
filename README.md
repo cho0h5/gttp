@@ -1,7 +1,7 @@
 # Simple Golang HTTP Server
 ## Install
 ```bash
-$ go get -u github.com/dominoyh5/gttp
+$ go get -u github.com/cho0h5/gttp
 ```
 ## Run
 Default port is 8080.
